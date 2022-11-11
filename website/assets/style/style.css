@@ -1,0 +1,283 @@
+*{margin: 0px; padding: 0px;}
+
+:root{
+  --main-color: #006400;
+  --light-back: #fefcd0;
+  --cont: #d0db61;
+  --head-col: #458728;
+  --extra-color: #f9eebd;
+}
+
+html, body{
+  font-family: Montserrat;
+}
+/* Adding blank space */
+
+.blank_space{
+  width: 100%;
+  height: 10vh;
+}
+
+/* Adding blank space */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  width: 100%;
+  background-color: var(--main-color);
+  overflow: hidden;
+  position: fixed;
+  z-index: 10;
+}
+
+.topnav > .logo{
+  width: 10%;
+  height: 80%;
+  float: left;
+}
+
+.topnav > .logo > img{
+  width: 100%;
+  height: 100%;
+}
+
+.topnav > .nav{
+  float: right;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: var(--main-color);
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+/* Landing page */
+
+.land{
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* opacity: 0.8; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.land > #cont, .land > #btn{
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: var(--font-color); */
+}
+
+.land > #cont{
+  width: 50%;
+  height: 20%;
+  font-family: cursive;
+  color: var(--head-col);
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.land > #btn{
+  height: 10%;
+  width: 12%;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 15%;
+  background-color: var(--main-color);
+  color: var(--cont);
+}
+
+/* Landing page */
+
+/* About us */
+
+.abt{
+  width: 100%;
+  height: 80vh;
+  background-color: var(--main-color);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.abt > #abt_cont{
+  width: 60%;
+  height: auto;
+  font-size: 1.1em;
+  word-spacing: 5px;
+}
+
+/* About us */
+
+/* Products */
+
+.prod_cont{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.prod{
+  width: 80%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card{
+  width: 35%;
+  height: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--light-back);
+}
+
+.card > img{
+  width: 80%;
+  height: 80%;
+}
+
+.card > h2{
+  color: var(--head-col);
+}
+
+/* Products */
+
+/* Vision and Mission */
+.cont{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+#vis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 50%;
+  height: auto;
+  padding: 2%;
+  word-spacing: 5px;
+}
+#vis:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+/* Vision and Mission */
+
+/* Team Members */
+.teams{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.team{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.team > .team_card{
+  width: 40%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Team Members */
+
+/* Footer */
+
+.footer{
+  width: 100%;
+  height: 50vh;
+  background-color: var(--extra-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer > .foot_logo{
+  width: 30%;
+  height: 50%;
+}
+
+.footer > .foot_logo > img{
+  width: 100%;
+  height: 100%;
+}
+
+.footer > .foot_cont{
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer > .foot_cont > a{
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+/* Footer */
